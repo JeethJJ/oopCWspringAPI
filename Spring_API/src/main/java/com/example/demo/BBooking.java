@@ -1,20 +1,23 @@
 package com.example.demo;
 import dev.morphia.annotations.Entity;
+
 import java.util.Date;
 import java.util.Objects;
 
-@Entity("Booking")
+@Entity("BBooking")
 public class BBooking {
     private String bikeNum;
     private Date sday;
     private Date eday;
 
 
-    public BBooking(String bikeNum, Date sday, Date eday) {
+    public BBooking(String bikeNum, Date sday, Date eday) {       //to create the booking data
         this.bikeNum = bikeNum;
         this.sday = sday;
         this.eday = eday;
     }
+
+    public BBooking(){}
 
     public String getBikeNum() {
         return bikeNum;

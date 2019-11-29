@@ -5,7 +5,7 @@ import dev.morphia.annotations.Entity;
 import java.util.Date;
 import java.util.Objects;
 
-@Entity("Booking")
+@Entity("CBooking")
 public class CBooking {
     private String carNum;
     private Date sday;
@@ -17,6 +17,8 @@ public class CBooking {
         this.sday = sday;
         this.eday = eday;
     }
+
+    public CBooking(){}
 
     public String getCarNum() {
         return carNum;
