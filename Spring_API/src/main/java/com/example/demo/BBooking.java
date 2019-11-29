@@ -4,7 +4,7 @@ import dev.morphia.annotations.Entity;
 import java.util.Date;
 import java.util.Objects;
 
-@Entity("BBooking")
+@Entity("BBooking")    //create the collection in db
 public class BBooking {
     private String bikeNum;
     private Date sday;

@@ -2,6 +2,7 @@ package com.example.demo;
 
 import java.util.Objects;
 
+//this is a formatted booking class which is created only to return the bookings as json objects to the front end, bcs the date is string
 public class FormattedBooking {
     String plateNumber;
     String sDay;

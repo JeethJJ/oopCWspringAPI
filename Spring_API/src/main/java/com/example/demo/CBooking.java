@@ -4,7 +4,7 @@ import dev.morphia.annotations.Entity;
 
 import java.util.Date;
 import java.util.Objects;
-
+//this is created to store the bookings in the database
 @Entity("CBooking")
 public class CBooking {
     private String carNum;

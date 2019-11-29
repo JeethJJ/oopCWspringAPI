@@ -38,19 +38,19 @@ public class Database {
     }
 
     public void getBike() {                           //get all bike objects
-        bikeList.clear();
+        bikeList.clear();    //refreshes the list every time the data is required
         Query<Motorbike> query = this.rentalStore.createQuery(Motorbike.class);
         bikeList.addAll(query.find().toList());
     }
 
     public void getCarBooking(){
-        bookingsCar.clear();
+        bookingsCar.clear();     //refreshes the list every time the data is required
         Query<CBooking> query = this.rentalStore.createQuery(CBooking.class);    //query to get all car booking
         bookingsCar.addAll( query.find().toList());
     }
 
     public void getBikeBooking(){
-        bookingsBike.clear();
+        bookingsBike.clear();       //refreshes the list every time the data is required
         Query<BBooking> query2 = this.rentalStore.createQuery(BBooking.class);   //query to get all bikes booking
         bookingsBike.addAll( query2.find().toList());
     }

@@ -13,8 +13,8 @@ public class CarConnectionAPI {
     @RequestMapping(value = "/car",produces = MediaType.APPLICATION_JSON_VALUE,method = RequestMethod.GET)   //request for data
     @ResponseBody              // data responce
     public List<Vehicle> returnAll(){
-        db.getCar();
-        return Database.carList;
+        db.getCar();       // this will refresh each and every time the data is required. so its more efficient
+        return Database.carList;            //sending all cars
     }
 
 }

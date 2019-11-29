@@ -3,6 +3,7 @@ package com.example.demo;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+//this is the same class from console app
 
 public final class Motorbike extends Vehicle {
     private int noOfStands;

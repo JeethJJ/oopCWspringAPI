@@ -1,5 +1,7 @@
 package com.example.demo;
 
+
+//this is an additional thing i created to store customer details , for now not implemented
 public class Customer {
     private int customerId;
     private String customerName;

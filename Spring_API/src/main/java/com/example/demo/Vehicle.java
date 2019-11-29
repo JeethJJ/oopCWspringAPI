@@ -3,6 +3,8 @@ package com.example.demo;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+//this is the same class from console app
+
 public abstract class Vehicle implements Comparable<Vehicle>{
     private String plateNumber;
     private String make;
